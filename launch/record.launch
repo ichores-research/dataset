@@ -1,0 +1,5 @@
+<!-- Lidar camera ID: f1230787 -->
+<launch>
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find dataset)/rviz/config.rviz" />
+</launch>
