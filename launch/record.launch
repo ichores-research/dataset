@@ -1,5 +1,6 @@
-<!-- Lidar camera ID: f1230787 -->
 <launch>
-    <include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
-    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find dataset)/rviz/config.rviz" />
-</launch>
+    <arg name="suffix" default="last"/>
+    <arg name="dir" default="/tmp"/>
+    <node pkg="rosbag" type="record" name="record_bags"
+       args="record -o $(arg dir)/recording_$(arg suffix) /audio/audio /lidar_cam/color/image_raw /lidar_cam/depth/image_rect_raw /usb_cam/image_raw"/>  
+</launch>   
