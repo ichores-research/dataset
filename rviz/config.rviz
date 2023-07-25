@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /DepthCloud1
-        - /DepthCloud1/Status1
         - /Center Camera1
         - /Left Camera1
         - /Right Camera1
@@ -98,13 +97,15 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        camera:
+        cam_left:
           Value: true
-        head_camera:
+        cam_right:
           Value: true
         lidar_cam_color_frame:
           Value: true
         lidar_cam_color_optical_frame:
+          Value: true
+        lidar_cam_depth:
           Value: true
         lidar_cam_depth_frame:
           Value: true
@@ -112,11 +113,13 @@ Visualization Manager:
           Value: true
         lidar_cam_link:
           Value: true
+        lidar_cam_rgb:
+          Value: true
         map:
           Value: true
-        usb_camera_left:
+        tripod_joint:
           Value: true
-        usb_camera_right:
+        tripod_platorm:
           Value: true
       Marker Alpha: 1
       Marker Scale: 1
@@ -126,24 +129,24 @@ Visualization Manager:
       Show Names: true
       Tree:
         map:
-          camera:
-            {}
-          head_camera:
-            {}
-          lidar_cam_color_frame:
-            {}
-          lidar_cam_color_optical_frame:
-            {}
-          lidar_cam_depth_frame:
-            {}
-          lidar_cam_depth_optical_frame:
-            {}
-          lidar_cam_link:
-            {}
-          usb_camera_left:
-            {}
-          usb_camera_right:
-            {}
+          tripod_joint:
+            tripod_platorm:
+              cam_left:
+                {}
+              cam_right:
+                {}
+              lidar_cam_depth:
+                lidar_cam_depth_frame:
+                  {}
+                lidar_cam_depth_optical_frame:
+                  {}
+                lidar_cam_link:
+                  {}
+              lidar_cam_rgb:
+                lidar_cam_color_frame:
+                  {}
+                lidar_cam_color_optical_frame:
+                  {}
       Update Interval: 0
       Value: true
     - Class: rviz/Camera
@@ -187,7 +190,7 @@ Visualization Manager:
       Image Rendering: background and overlay
       Image Topic: /right_cam_node/image_raw
       Name: Right Camera
-      Overlay Alpha: 0.5
+      Overlay Alpha: 1
       Queue Size: 2
       Transport Hint: raw
       Unreliable: false
@@ -228,7 +231,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 4.336963176727295
+      Distance: 4.84188175201416
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -244,9 +247,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.3853987157344818
+      Pitch: 0.3253987431526184
       Target Frame: <Fixed Frame>
-      Yaw: 4.283576488494873
+      Yaw: 4.338576316833496
     Saved: ~
 Window Geometry:
   Center Camera:

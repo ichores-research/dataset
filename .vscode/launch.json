@@ -7,7 +7,7 @@
         {
             "name": "ROS: Launch",
             "request": "launch",
-            "target": "/home/robot/Code/ichores_ws/src/dataset/launch/record.launch",
+            "target": "/home/robot/Code/ichores_ws/src/dataset/launch/bringup.launch",
             "launch": [
                 // "rviz",
                 // "gz",
