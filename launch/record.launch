@@ -1,5 +1,5 @@
 <launch>
     <arg name="dir" default="/tmp"/>
     <node pkg="rosbag" type="record" name="record_bags"
-       args="record -o $(arg dir)/recording.bag /audio/audio /lidar_cam/color/image_raw/compressed /lidar_cam/depth/image_rect_raw/compressed /left_cam_node/image_raw/compressed /right_cam_node/image_raw/compressed"/>  
+       args="record -o $(arg dir)/recording.bag /audio/audio /head_realsense_cam/color/image_raw/compressed /head_realsense_cam/depth/image_rect_raw/compressed  /chest_realsense_cam/color/image_raw/compressed /chest_realsense_cam/depth/image_rect_raw/compressed /left_elgato_cam/image_raw/compressed /right_elgato_cam/image_raw/compressed"/>  
 </launch>   
