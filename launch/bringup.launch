@@ -21,10 +21,10 @@
     <!-- RealSense transforms -->
 
     <!-- Head RealSense Camera -->
-    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_color_optical_frame_pub" args="0 0 0 0 0 0 map $(arg head_realsense_cam_name)_color_optical_frame 100"/>
-    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_depth_frame_pub" args="0 0 0 0 0 0 map $(arg head_realsense_cam_name)_depth_frame 100"/>
-    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_link_pub" args="0 0 0 0 0 0 map $(arg head_realsense_cam_name)_link 100"/>
-    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_color_frame_pub" args="0 0 0 0 0 0 map $(arg head_realsense_cam_name)_color_frame 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_color_optical_frame_pub" args="0 0 2 0 0 0 map $(arg head_realsense_cam_name)_color_optical_frame 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_depth_frame_pub" args="0 0 2 0 0 0 map $(arg head_realsense_cam_name)_depth_frame 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_link_pub" args="0 0 2 0 0 0 map $(arg head_realsense_cam_name)_link 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="$(arg head_realsense_cam_name)_color_frame_pub" args="0 0 2 0 0 0 map $(arg head_realsense_cam_name)_color_frame 100"/>
 
     <!-- Chest RealSense Camera -->
     <node pkg="tf" type="static_transform_publisher" name="$(arg chest_realsense_cam_name)_color_optical_frame_pub" args="0 0 0 0 0 0 map $(arg chest_realsense_cam_name)_color_optical_frame 100"/>
