@@ -107,13 +107,14 @@
             <param name="height" value="540" />
             <!-- choose whichever uncompressed format the camera supports: -->
             <param name="video_mode" value="uyvy" /> <!-- or yuyv/nv12/mjpeg -->
-            <param name="frame_rate" value="60" />
+            <param name="frame_rate" value="30" />
 
             <param name="timestamp_method" value="start" /> <!-- start of frame -->
             <param name="camera_info_url" value="file://$(find dataset)/config/elgato.yaml" />
 
-            <param name="auto_exposure" value="3" /> <!-- use aperture_priority auto exposure -->
-            <param name="auto_white_balance" value="false" />
+            <!-- use aperture_priority auto exposure -->
+            <!-- <param name="auto_exposure" value="3" /> -->
+            <!-- <param name="auto_white_balance" value="false" /> -->
         </node>
     </group>
 
@@ -132,13 +133,14 @@
             <param name="height" value="540" />
             <!-- choose whichever uncompressed format the camera supports: -->
             <param name="video_mode" value="uyvy" /> <!-- or yuyv/nv12/mjpeg -->
-            <param name="frame_rate" value="60" />
+            <param name="frame_rate" value="30" />
 
             <param name="timestamp_method" value="start" /> <!-- start of frame -->
             <param name="camera_info_url" value="file://$(find dataset)/config/elgato.yaml" />
 
-            <param name="auto_exposure" value="3" /> <!-- use aperture_priority auto exposure -->
-            <param name="auto_white_balance" value="false" />
+            <!-- use aperture_priority auto exposure -->
+            <!-- <param name="auto_exposure" value="3" /> -->
+            <!-- <param name="auto_white_balance" value="false" /> -->
         </node>
     </group>
 
