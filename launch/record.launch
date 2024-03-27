@@ -1,7 +1,8 @@
 <launch>
+    <arg name="exp_name" default="recording" />
     <arg name="dir" default="/tmp"/>
     <node pkg="rosbag" type="record" name="record_bags"
-       args="record -o $(arg dir)/recording.bag 
+       args="record -o $(arg dir)/$(arg exp_name).bag 
        /audio/audio 
        /head_realsense_cam/color/camera_info 
        /head_realsense_cam/color/image_raw 

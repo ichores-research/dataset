@@ -17,10 +17,10 @@
             "type": "ros"
         },
         {
-            "name": "Python Debugger: Current File",
+            "name": "GUI",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/gui.py",
             "console": "integratedTerminal"
         }
     ]
