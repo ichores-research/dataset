@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import signal
 import subprocess
 from tkinter import *
